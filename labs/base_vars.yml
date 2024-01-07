@@ -1,12 +1,12 @@
 ### Base vars to get over-written by Ansible Tower Survey (i.e. Extra Vars) at runtime
 ---
-lab_hosts: containerlab01.server
+lab_hosts: clab.dumsor.com
 lab_username: kaon
 lab_userid: "11"
 lab_title: "server-core-lab01"
 router_container_kind: ceos
 host_container_kind: linux
-wireshark_command: "ssh clab@containerlab01.server 'sudo ip netns exec <container_name> tcpdump -U -nni <intf> -w -' | /mnt/c/Program\\ Files/Wireshark/wireshark.exe -k -i -"
+wireshark_command: "ssh clab@clab.dumsor 'sudo ip netns exec <container_name> tcpdump -U -nni <intf> -w -' | /mnt/c/Program\\ Files/Wireshark/wireshark.exe -k -i -"
 actions:
   - deploy
 user_map:
