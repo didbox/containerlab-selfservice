@@ -6,7 +6,7 @@ lab_userid: "11"
 lab_title: "server-core-lab01"
 router_container_kind: ceos
 host_container_kind: linux
-wireshark_command: "ssh clab@clab.dumsor 'sudo ip netns exec <container_name> tcpdump -U -nni <intf> -w -' | /mnt/c/Program\\ Files/Wireshark/wireshark.exe -k -i -"
+wireshark_command: "ssh didbox@clab.dumsor.com 'sudo ip netns exec <container_name> tcpdump -U -nni <intf> -w -' | /mnt/c/Program\\ Files/Wireshark/wireshark.exe -k -i -"
 actions:
   - deploy
 user_map:
