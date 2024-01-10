@@ -120,7 +120,7 @@ topology:
       kind: "{{ host_container_kind }}"
       image: "{{ host_container_image }}"
       ports:
-        - "5{{ user_map[lab_username] }}19:22"
+  - "5{{ user_map[lab_username] }}19:22"
 
   links:
     {%for link in links %}
