@@ -4,9 +4,11 @@ lab_hosts: clab.dumsor.com
 lab_username: kaon
 lab_userid: "11"
 lab_title: "server-core-lab01"
-router_container_kind: ceos
+router_container_kind: cisco_n9kv
+router_container_image: vrnetlab/vr-n9kv:10.3.1
 host_container_kind: linux
-wireshark_command: "ssh didbox@clab.dumsor.com 'sudo ip netns exec <container_name> tcpdump -U -nni <intf> -w -' | /mnt/c/Program\\ Files/Wireshark/wireshark.exe -k -i -"
+host_container_image: alpine:latest
+wireshark_command: "ssh clab@clab.dumsor.com 'sudo ip netns exec <container_name> tcpdump -U -nni <intf> -w -' | /mnt/c/Program\\ Files/Wireshark/wireshark.exe -k -i -"
 actions:
   - deploy
 user_map:
