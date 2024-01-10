@@ -72,25 +72,25 @@ topology:
       kind: "{{ router_container_kind }}"
       image: "{{ router_container_image }}"
       ports:
-  - "5{{ user_map[lab_username] }}12:22"
+        - "5{{ user_map[lab_username] }}12:22"
 
     {{ lab_title }}-{{ lab_username }}-r13:
       kind: "{{ router_container_kind }}"
       image: "{{ router_container_image }}"
       ports:
-  - "5{{ user_map[lab_username] }}13:22"
+        - "5{{ user_map[lab_username] }}13:22"
 
     {{ lab_title }}-{{ lab_username }}-r14:
       kind: "{{ router_container_kind }}"
       image: "{{ router_container_image }}"
       ports:
-  - "5{{ user_map[lab_username] }}14:22"
+        - "5{{ user_map[lab_username] }}14:22"
 
     {{ lab_title }}-{{ lab_username }}-r15:
       kind: "{{ router_container_kind }}"
       image: "{{ router_container_image }}"
       ports:
-  - "5{{ user_map[lab_username] }}15:22"
+        - "5{{ user_map[lab_username] }}15:22"
 
     {{ lab_title }}-{{ lab_username }}-r16:
       kind: "{{ router_container_kind }}"
@@ -102,25 +102,25 @@ topology:
       kind: "{{ router_container_kind }}"
       image: "{{ router_container_image }}"
       ports:
-  - "5{{ user_map[lab_username] }}20:22"
+        - "5{{ user_map[lab_username] }}20:22"
 
     {{ lab_title }}-{{ lab_username }}-c17:
       kind: "{{ host_container_kind }}"
       image: "{{ host_container_image }}"
       ports:
-  - "5{{ user_map[lab_username] }}17:22"
+        - "5{{ user_map[lab_username] }}17:22"
 
     {{ lab_title }}-{{ lab_username }}-c18:
       kind: "{{ host_container_kind }}"
       image: "{{ host_container_image }}"
       ports:
-  - "5{{ user_map[lab_username] }}18:22"
+        - "5{{ user_map[lab_username] }}18:22"
 
     {{ lab_title }}-{{ lab_username }}-w19:
       kind: "{{ host_container_kind }}"
       image: "{{ host_container_image }}"
       ports:
-  - "5{{ user_map[lab_username] }}19:22"
+        - "5{{ user_map[lab_username] }}19:22"
 
   links:
     {%for link in links %}
