@@ -1,7 +1,7 @@
 ---
 - name: Service to Shutdown Long Running ContainerLabs
   gather_facts: false
-  hosts: localhost
+  hosts: clab.dumsor.com
   become: yes
   tasks:
     - name: Grab List of All Running ContainerLab Docker Instances
